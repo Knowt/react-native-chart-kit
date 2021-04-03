@@ -44,9 +44,7 @@ var BarChart = /** @class */ (function (_super) {
                 return (<Rect key={Math.random()} x={paddingRight +
                     (i * (width - paddingRight)) / data.length +
                     barWidth / 2} y={((barHeight > 0 ? baseHeight - barHeight : baseHeight) / 4) * 3 +
-                    paddingTop} rx={barRadius} width={barWidth} height={(Math.abs(barHeight) / 4) * 3} fill={withCustomBarColorFromData
-                    ? "url(#customColor_0_" + i + ")"
-                    : _a.fillColors[i]}/>);
+                    paddingTop} rx={barRadius} width={barWidth} height={(Math.abs(barHeight) / 4) * 3} fill={_a.fillColors[i]}/>);
             });
         };
         _this.renderBarTops = function (_a) {
