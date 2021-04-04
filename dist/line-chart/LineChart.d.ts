@@ -28,6 +28,7 @@ export interface LineChartProps extends AbstractChartProps {
      * Width of the chart, use 'Dimensions' library to get the width of your screen for responsive.
      */
     width: number;
+    fillColor: string;
     /**
      * Height of the chart.
      */
