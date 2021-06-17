@@ -374,7 +374,7 @@ var LineChart = /** @class */ (function (_super) {
           <Rect width="100%" height={height + legendOffset} rx={borderRadius} ry={borderRadius} fill="url(#backgroundGradient)" fillOpacity={transparent ? 0 : 1}/>
           {this.props.data.legend &&
             this.renderLegend(config.width, legendOffset)}
-          <G x="0" y={legendOffset} x={-12}>
+          <G y={legendOffset} x={-12}>
             {this.renderDefs(__assign(__assign(__assign({}, config), chartConfig), { data: data.datasets }))}
             <G>
               {withHorizontalLines &&
